@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>طلب منتج</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* خلفية متحركة */
+    body {
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      font-family: 'Segoe UI', sans-serif;
+      animation: gradient 10s ease infinite;
+      background: linear-gradient(-45deg, #1a1a1a, #002f4b, #006778, #0f2027);
+      background-size: 400% 400%;
+      color: #ffffff;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00e0ff;
+    }
+
+    .btn-toggle {
+      background-color: #00e0ff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-toggle:hover {
+      background-color: #00bcd4;
+    }
+
+    .product-img {
+      display: none;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 3px solid #00e0ff;
+    }
+
+    label {
+      color: #00e0ff;
+      font-weight: bold;
+    }
+
+    .form-control {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+
+    .form-control:focus {
+      border-color: #00e0ff;
+      box-shadow: none;
+    }
+
+    button[type="submit"] {
+      background-color: #28a745;
+      border: none;
+      font-weight: bold;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>💎 عطر رجالي فاخر 💎</h2>
+
+    <button class="btn-toggle" onclick="showImage()">👀 اضغط هنا لرؤية المنتج</button>
+    <img src="images/hatem-boukhit-ALd9CEDrRdY-unsplash.jpg" alt="عطر" id="productImage" class="product-img">
+
+    <p class="mt-3">عطر يدوم طويلاً برائحة جذابة، متوفر الآن بسعر 2500 دج فقط!</p>
+
+    <form action="https://formsubmit.co/akalabdelhakamine38@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="mb-3">
+        <label>الاسم الكامل</label>
+        <input type="text" name="name" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label>رقم الهاتف</label>
+        <input type="tel" name="phone" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label>الولاية</label>
+        <select name="wilaya" class="form-control" required>
+          <option value="">اختر ولايتك</option>
+          <option>أدرار</option>
+<option>الشلف</option>
+<option>الأغواط</option>
+<option>أم البواقي</option>
+<option>باتنة</option>
+<option>بجاية</option>
+<option>بسكرة</option>
+<option>بشار</option>
+<option>البليدة</option>
+<option>البويرة</option>
+<option>تمنراست</option>
+<option>تبسة</option>
+<option>تلمسان</option>
+<option>تيارت</option>
+<option>تيزي وزو</option>
+<option>الجزائر</option>
+<option>الجلفة</option>
+<option>جيجل</option>
+<option>سطيف</option>
+<option>سعيدة</option>
+<option>سكيكدة</option>
+<option>سيدي بلعباس</option>
+<option>عنابة</option>
+<option>قالمة</option>
+<option>قسنطينة</option>
+<option>المدية</option>
+<option>مستغانم</option>
+<option>المسيلة</option>
+<option>معسكر</option>
+<option>ورقلة</option>
+<option>وهران</option>
+<option>البيض</option>
+<option>إليزي</option>
+<option>برج بوعريريج</option>
+<option>بومرداس</option>
+<option>الطارف</option>
+<option>تندوف</option>
+<option>تيسمسيلت</option>
+<option>الوادي</option>
+<option>خنشلة</option>
+<option>سوق أهراس</option>
+<option>تيبازة</option>
+<option>ميلة</option>
+<option>عين الدفلى</option>
+<option>النعامة</option>
+<option>عين تموشنت</option>
+<option>غرداية</option>
+<option>غليزان</option>
+<option>تميمون</option>
+<option>برج باجي مختار</option>
+<option>أولاد جلال</option>
+<option>بني عباس</option>
+<option>إن صالح</option>
+<option>إن قزام</option>
+<option>تقرت</option>
+<option>جانت</option>
+<option>المغير</option>
+<option>المنيعة</option>
+
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label>الكمية</label>
+        <input type="number" name="quantity" min="1" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label>العنوان بالتفصيل</label>
+        <textarea name="address" class="form-control" rows="2" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">✅ تأكيد الطلب</button>
+    </form>
+  </div>
+
+  <script>
+    function showImage() {
+      const img = document.getElementById("productImage");
+      img.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
